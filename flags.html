@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>World Flag Challenge</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="flags_files/libs/clipboard/clipboard.min.js"></script>
+<script src="flags_files/libs/quarto-html/tabby.min.js"></script>
+<script src="flags_files/libs/quarto-html/popper.min.js"></script>
+<script src="flags_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="flags_files/libs/quarto-html/anchor.min.js"></script>
+<link href="flags_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="flags_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="flags_files/libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="flags_files/libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script type="module" src="flags_files/libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="flags_files/libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+<script type="ojs-define">
+{"contents":[{"name":"flag_data","value":{"file":["ad.png","ae.png","af.png","ag.png","ai.png","al.png","am.png","ao.png","aq.png","ar.png","as.png","at.png","au.png","aw.png","ax.png","az.png","ba.png","bb.png","bd.png","be.png","bf.png","bg.png","bh.png","bi.png","bj.png","bl.png","bm.png","bn.png","bo.png","bq.png","br.png","bs.png","bt.png","bv.png","bw.png","by.png","bz.png","ca.png","cc.png","cd.png","cf.png","cg.png","ch.png","ci.png","ck.png","cl.png","cm.png","cn.png","co.png","cr.png","cu.png","cv.png","cw.png","cx.png","cy.png","cz.png","de.png","dj.png","dk.png","dm.png","do.png","dz.png","ec.png","ee.png","eg.png","eh.png","er.png","es.png","et.png","fi.png","fj.png","fk.png","fm.png","fo.png","fr.png","ga.png","gb-eng.png","gb-nir.png","gb-sct.png","gb-wls.png","gb.png","gd.png","ge.png","gf.png","gg.png","gh.png","gi.png","gl.png","gm.png","gn.png","gp.png","gq.png","gr.png","gs.png","gt.png","gu.png","gw.png","gy.png","hk.png","hm.png","hn.png","hr.png","ht.png","hu.png","id.png","ie.png","il.png","im.png","in.png","io.png","iq.png","ir.png","is.png","it.png","je.png","jm.png","jo.png","jp.png","ke.png","kg.png","kh.png","ki.png","km.png","kn.png","kp.png","kr.png","kw.png","ky.png","kz.png","la.png","lb.png","lc.png","li.png","lk.png","lr.png","ls.png","lt.png","lu.png","lv.png","ly.png","ma.png","mc.png","md.png","me.png","mf.png","mg.png","mh.png","mk.png","ml.png","mm.png","mn.png","mo.png","mp.png","mq.png","mr.png","ms.png","mt.png","mu.png","mv.png","mw.png","mx.png","my.png","mz.png","na.png","nc.png","ne.png","nf.png","ng.png","ni.png","nl.png","no.png","np.png","nr.png","nu.png","nz.png","om.png","pa.png","pe.png","pf.png","pg.png","ph.png","pk.png","pl.png","pm.png","pn.png","pr.png","ps.png","pt.png","pw.png","py.png","qa.png","re.png","ro.png","rs.png","ru.png","rw.png","sa.png","sb.png","sc.png","sd.png","se.png","sg.png","sh.png","si.png","sj.png","sk.png","sl.png","sm.png","sn.png","so.png","sr.png","ss.png","st.png","sv.png","sx.png","sy.png","sz.png","tc.png","td.png","tf.png","tg.png","th.png","tj.png","tk.png","tl.png","tm.png","tn.png","to.png","tr.png","tt.png","tv.png","tw.png","tz.png","ua.png","ug.png","um.png","us.png","uy.png","uz.png","va.png","vc.png","ve.png","vg.png","vi.png","vn.png","vu.png","wf.png","ws.png","xk.png","ye.png","yt.png","za.png","zm.png","zw.png"],"name":["Andorra","United Arab Emirates","Afghanistan","Antigua & Barbuda","Anguilla","Albania","Armenia","Angola","Antarctica","Argentina","American Samoa","Austria","Australia","Aruba","Åland Islands","Azerbaijan","Bosnia & Herzegovina","Barbados","Bangladesh","Belgium","Burkina Faso","Bulgaria","Bahrain","Burundi","Benin","St. Barthélemy","Bermuda","Brunei","Bolivia","Caribbean Netherlands","Brazil","Bahamas","Bhutan","Bouvet Island","Botswana","Belarus","Belize","Canada","Cocos (Keeling) Islands","Congo - Kinshasa","Central African Republic","Congo - Brazzaville","Switzerland","Côte d’Ivoire","Cook Islands","Chile","Cameroon","China","Colombia","Costa Rica","Cuba","Cape Verde","Curaçao","Christmas Island","Cyprus","Czechia","Germany","Djibouti","Denmark","Dominica","Dominican Republic","Algeria","Ecuador","Estonia","Egypt","Western Sahara","Eritrea","Spain","Ethiopia","Finland","Fiji","Falkland Islands","Micronesia (Federated States of)","Faroe Islands","France","Gabon","England","Northern Ireland","Scotland","Wales","United Kingdom","Grenada","Georgia","French Guiana","Guernsey","Ghana","Gibraltar","Greenland","Gambia","Guinea","Guadeloupe","Equatorial Guinea","Greece","South Georgia & South Sandwich Islands","Guatemala","Guam","Guinea-Bissau","Guyana","Hong Kong SAR China","Heard & McDonald Islands","Honduras","Croatia","Haiti","Hungary","Indonesia","Ireland","Israel","Isle of Man","India","British Indian Ocean Territory","Iraq","Iran","Iceland","Italy","Jersey","Jamaica","Jordan","Japan","Kenya","Kyrgyzstan","Cambodia","Kiribati","Comoros","St. Kitts & Nevis","North Korea","South Korea","Kuwait","Cayman Islands","Kazakhstan","Laos","Lebanon","St. Lucia","Liechtenstein","Sri Lanka","Liberia","Lesotho","Lithuania","Luxembourg","Latvia","Libya","Morocco","Monaco","Moldova","Montenegro","Saint Martin (French part)","Madagascar","Marshall Islands","North Macedonia","Mali","Myanmar (Burma)","Mongolia","Macao SAR China","Northern Mariana Islands","Martinique","Mauritania","Montserrat","Malta","Mauritius","Maldives","Malawi","Mexico","Malaysia","Mozambique","Namibia","New Caledonia","Niger","Norfolk Island","Nigeria","Nicaragua","Netherlands","Norway","Nepal","Nauru","Niue","New Zealand","Oman","Panama","Peru","French Polynesia","Papua New Guinea","Philippines","Pakistan","Poland","St. Pierre & Miquelon","Pitcairn Islands","Puerto Rico","Palestinian Territories","Portugal","Palau","Paraguay","Qatar","Réunion","Romania","Serbia","Russia","Rwanda","Saudi Arabia","Solomon Islands","Seychelles","Sudan","Sweden","Singapore","St. Helena","Slovenia","Svalbard & Jan Mayen","Slovakia","Sierra Leone","San Marino","Senegal","Somalia","Suriname","South Sudan","São Tomé & Príncipe","El Salvador","Sint Maarten","Syria","Eswatini","Turks & Caicos Islands","Chad","French Southern Territories","Togo","Thailand","Tajikistan","Tokelau","Timor-Leste","Turkmenistan","Tunisia","Tonga","Turkey","Trinidad & Tobago","Tuvalu","Taiwan","Tanzania","Ukraine","Uganda","United States Minor Outlying Islands (the)","United States","Uruguay","Uzbekistan","Vatican City","St. Vincent & Grenadines","Venezuela","British Virgin Islands","U.S. Virgin Islands","Vietnam","Vanuatu","Wallis & Futuna","Samoa","Kosovo","Yemen","Mayotte","South Africa","Zambia","Zimbabwe"],"similar":[["ro.png","td.png","md.png"],["sy.png","ps.png","eh.png"],["bd.png","sa.png","bb.png"],["ma.png","ws.png","li.png"],["fk.png","tc.png","gs.png"],["cn.png","vn.png","ma.png"],["gm.png","ma.png","lt.png"],["pg.png","gm.png","by.png"],["so.png","fm.png","gt.png"],["fm.png","so.png","lc.png"],["kw.png","sv.png","nl.png"],["lv.png","dk.png","hu.png"],["hm.png","nz.png","sh.png"],["fm.png","so.png","kz.png"],["se.png","ga.png","nc.png"],["nc.png","ga.png","rw.png"],["bb.png","vc.png","xk.png"],["td.png","ro.png","md.png"],["mo.png","sa.png","br.png"],["td.png","ro.png","sn.png"],["bo.png","by.png","gh.png"],["ru.png","sk.png","si.png"],["qa.png","mt.png","mg.png"],["mm.png","mr.png","gd.png"],["cm.png","cg.png","ml.png"],["jp.png","cy.png","vi.png"],["ma.png","wf.png","im.png"],["bt.png","mm.png","lt.png"],["gh.png","tj.png","ne.png"],["dj.png","fm.png","tf.png"],["bd.png","sa.png","tm.png"],["cx.png","mo.png","ga.png"],["mm.png","es.png","mk.png"],["lv.png","at.png","hu.png"],["ee.png","fm.png","xk.png"],["gh.png","bf.png","bo.png"],["gu.png","la.png","xk.png"],["pe.png","cn.png","tr.png"],["zm.png","tm.png","bd.png"],["so.png","xk.png","kz.png"],["gf.png","ir.png","ua.png"],["bj.png","ml.png","sn.png"],["tn.png","hk.png","kg.png"],["ng.png","gn.png","pe.png"],["nz.png","sh.png","ky.png"],["cz.png","pl.png","bg.png"],["bj.png","tl.png","cg.png"],["im.png","ma.png","vn.png"],["ec.png","lt.png","ve.png"],["sr.png","cu.png","th.png"],["cr.png","sr.png","tg.png"],["xk.png","mo.png","cw.png"],["nr.png","xk.png","aw.png"],["bs.png","mo.png","bd.png"],["jp.png","bl.png","vi.png"],["cl.png","pl.png","bg.png"],["mw.png","mz.png","ke.png"],["fm.png","uz.png","so.png"],["at.png","lv.png","hu.png"],["ga.png","ls.png","st.png"],["lv.png","hu.png","nl.png"],["fm.png","fj.png","cm.png"],["co.png","lt.png","mm.png"],["bw.png","fi.png","fm.png"],["iq.png","tj.png","hu.png"],["ps.png","jo.png","ae.png"],["gy.png","np.png","st.png"],["cn.png","ma.png","im.png"],["li.png","kw.png","gq.png"],["fo.png","bw.png","fm.png"],["tv.png","fm.png","so.png"],["gs.png","ai.png","ms.png"],["so.png","ar.png","lc.png"],["fi.png","fm.png","yt.png"],["mx.png","it.png","ie.png"],["se.png","ax.png","sl.png"],["gg.png","ge.png","gb-nir.png"],["gb-eng.png","gg.png","ge.png"],["so.png","fm.png","kz.png"],["sm.png","dj.png","om.png"],["np.png","ma.png","wf.png"],["lt.png","ma.png","ve.png"],["gg.png","gb-eng.png","gb-nir.png"],["mz.png","ua.png","gn.png"],["gb-eng.png","ge.png","gb-nir.png"],["bo.png","by.png","bf.png"],["pl.png","gl.png","bg.png"],["pl.png","gi.png","sk.png"],["am.png","bf.png","vu.png"],["bb.png","gy.png","ci.png"],["bd.png","nr.png","sa.png"],["kw.png","lv.png","at.png"],["ar.png","fm.png","so.png"],["fk.png","ms.png","pn.png"],["fm.png","so.png","ng.png"],["bz.png","la.png","mv.png"],["bf.png","co.png","om.png"],["st.png","er.png","bd.png"],["tn.png","cn.png","im.png"],["au.png","nz.png","sh.png"],["ni.png","so.png","ar.png"],["py.png","nl.png","hu.png"],["li.png","ws.png","ag.png"],["nl.png","in.png","lv.png"],["mc.png","sg.png","ki.png"],["it.png","mx.png","fr.png"],["uy.png","ar.png","fm.png"],["cn.png","ma.png","vn.png"],["hu.png","ne.png","py.png"],["fj.png","bw.png","fm.png"],["eg.png","ye.png","tj.png"],["gq.png","lv.png","at.png"],["sv.png","ni.png","sl.png"],["mx.png","ie.png","fr.png"],["cy.png","bl.png","jp.png"],["bd.png","cc.png","zm.png"],["ps.png","eh.png","ae.png"],["bl.png","cy.png","vi.png"],["mw.png","bd.png","cc.png"],["vn.png","tn.png","cn.png"],["kp.png","sz.png","np.png"],["mc.png","id.png","sg.png"],["bj.png","cz.png","in.png"],["zm.png","ws.png","li.png"],["kh.png","sz.png","nc.png"],["bl.png","jp.png","cy.png"],["gq.png","ae.png","et.png"],["vg.png","sh.png","ms.png"],["so.png","xk.png","fm.png"],["mv.png","gu.png","mr.png"],["pf.png","at.png","lv.png"],["fm.png","ar.png","gt.png"],["ws.png","ht.png","ma.png"],["me.png","ma.png","mk.png"],["um.png","us.png","th.png"],["sv.png","ni.png","is.png"],["ve.png","mm.png","co.png"],["py.png","nl.png","hu.png"],["at.png","hu.png","nl.png"],["gm.png","vu.png","ao.png"],["im.png","cn.png","wf.png"],["id.png","sg.png","rs.png"],["ro.png","td.png","ad.png"],["cn.png","lk.png","mk.png"],["mx.png","it.png","ie.png"],["qa.png","bh.png","sx.png"],["xk.png","mo.png","nr.png"],["cn.png","im.png","ma.png"],["sn.png","td.png","ro.png"],["lt.png","ve.png","bt.png"],["ma.png","im.png","mv.png"],["xk.png","bd.png","sa.png"],["xk.png","mo.png","bd.png"],["st.png","tm.png","bd.png"],["la.png","mv.png","ma.png"],["ky.png","fk.png","gs.png"],["bh.png","qa.png","mg.png"],["gm.png","bo.png","by.png"],["la.png","ma.png","mr.png"],["ke.png","bd.png","de.png"],["it.png","fr.png","mf.png"],["ws.png","rs.png","mc.png"],["gf.png","de.png","ua.png"],["bd.png","xk.png","mo.png"],["az.png","se.png","ax.png"],["in.png","tj.png","hu.png"],["ng.png","mx.png","it.png"],["nf.png","gt.png","it.png"],["sv.png","is.png","hn.png"],["py.png","hu.png","lu.png"],["lv.png","at.png","hu.png"],["bd.png","xk.png","nr.png"],["cw.png","sh.png","nz.png"],["bt.png","es.png","mk.png"],["ck.png","sh.png","ky.png"],["gw.png","by.png","cl.png"],["fm.png","tf.png","ie.png"],["fr.png","mf.png","mx.png"],["lb.png","th.png","at.png"],["ao.png","tl.png","gm.png"],["li.png","qa.png","ua.png"],["qa.png","sx.png","mg.png"],["gi.png","gl.png","cz.png"],["gy.png","xk.png","aw.png"],["tc.png","sh.png","fk.png"],["th.png","pf.png","ma.png"],["eh.png","jo.png","ae.png"],["bj.png","ml.png","tl.png"],["so.png","kz.png","aq.png"],["nl.png","lu.png","hu.png"],["bh.png","mg.png","mt.png"],["xk.png","li.png","ph.png"],["td.png","md.png","ad.png"],["mc.png","sg.png","id.png"],["bg.png","si.png","sk.png"],["ua.png","aw.png","az.png"],["mo.png","bd.png","br.png"],["xk.png","nr.png","mo.png"],["bo.png","gh.png","bf.png"],["eg.png","ye.png","iq.png"],["ax.png","ga.png","nc.png"],["mc.png","id.png","rs.png"],["ky.png","nz.png","pn.png"],["ru.png","sk.png","bg.png"],["lv.png","at.png","hu.png"],["ru.png","bg.png","si.png"],["ni.png","sv.png","is.png"],["fm.png","ar.png","jp.png"],["ml.png","ro.png","td.png"],["fm.png","kz.png","aq.png"],["cr.png","th.png","cu.png"],["mw.png","bd.png","ke.png"],["ga.png","gy.png","se.png"],["ni.png","is.png","sl.png"],["mg.png","qa.png","bf.png"],["ae.png","sv.png","is.png"],["kh.png","kp.png","xk.png"],["pn.png","vg.png","ky.png"],["ro.png","md.png","ad.png"],["xk.png","so.png","fm.png"],["mq.png","gm.png","cw.png"],["sr.png","pr.png","ma.png"],["hu.png","ne.png","in.png"],["xk.png","bd.png","mo.png"],["ma.png","im.png","wf.png"],["cc.png","cx.png","bd.png"],["ch.png","hk.png","kg.png"],["ma.png","cn.png","im.png"],["cn.png","im.png","ma.png"],["ma.png","im.png","cn.png"],["fj.png","kz.png","so.png"],["ws.png","wf.png","cn.png"],["bd.png","mo.png","tm.png"],["rw.png","mz.png","li.png"],["es.png","ma.png","im.png"],["lr.png","fm.png","ar.png"],["lr.png","fm.png","ar.png"],["il.png","fm.png","fo.png"],["ni.png","sv.png","is.png"],["bt.png","cy.png","bl.png"],["bb.png","gn.png","td.png"],["lt.png","mm.png","co.png"],["ky.png","tc.png","ms.png"],["jp.png","bl.png","cy.png"],["kg.png","cn.png","al.png"],["gm.png","ly.png","bf.png"],["cn.png","ma.png","im.png"],["tw.png","ma.png","wf.png"],["mo.png","so.png","mp.png"],["iq.png","tj.png","hu.png"],["bl.png","cy.png","gb-eng.png"],["gm.png","vu.png","bf.png"],["cc.png","tm.png","cx.png"],["bh.png","qa.png","ma.png"]],"similar_names":[["Romania","Chad","Moldova"],["Syria","Palestinian Territories","Western Sahara"],["Bangladesh","Saudi Arabia","Barbados"],["Morocco","Samoa","Liechtenstein"],["Falkland Islands","Turks & Caicos Islands","South Georgia & South Sandwich Islands"],["China","Vietnam","Morocco"],["Gambia","Morocco","Lithuania"],["Papua New Guinea","Gambia","Belarus"],["Somalia","Micronesia (Federated States of)","Guatemala"],["Micronesia (Federated States of)","Somalia","St. Lucia"],["Kuwait","El Salvador","Netherlands"],["Latvia","Denmark","Hungary"],["Heard & McDonald Islands","New Zealand","St. Helena"],["Micronesia (Federated States of)","Somalia","Kazakhstan"],["Sweden","Gabon","New Caledonia"],["New Caledonia","Gabon","Rwanda"],["Barbados","St. Vincent & Grenadines","Kosovo"],["Chad","Romania","Moldova"],["Macao SAR China","Saudi Arabia","Brazil"],["Chad","Romania","Senegal"],["Bolivia","Belarus","Ghana"],["Russia","Slovakia","Slovenia"],["Qatar","Malta","Madagascar"],["Myanmar (Burma)","Mauritania","Grenada"],["Cameroon","Congo - Brazzaville","Mali"],["Japan","Cyprus","U.S. Virgin Islands"],["Morocco","Wallis & Futuna","Isle of Man"],["Bhutan","Myanmar (Burma)","Lithuania"],["Ghana","Tajikistan","Niger"],["Djibouti","Micronesia (Federated States of)","French Southern Territories"],["Bangladesh","Saudi Arabia","Turkmenistan"],["Christmas Island","Macao SAR China","Gabon"],["Myanmar (Burma)","Spain","North Macedonia"],["Latvia","Austria","Hungary"],["Estonia","Micronesia (Federated States of)","Kosovo"],["Ghana","Burkina Faso","Bolivia"],["Guam","Laos","Kosovo"],["Peru","China","Turkey"],["Zambia","Turkmenistan","Bangladesh"],["Somalia","Kosovo","Kazakhstan"],["French Guiana","Iran","Ukraine"],["Benin","Mali","Senegal"],["Tunisia","Hong Kong SAR China","Kyrgyzstan"],["Nigeria","Guinea","Peru"],["New Zealand","St. Helena","Cayman Islands"],["Czechia","Poland","Bulgaria"],["Benin","Timor-Leste","Congo - Brazzaville"],["Isle of Man","Morocco","Vietnam"],["Ecuador","Lithuania","Venezuela"],["Suriname","Cuba","Thailand"],["Costa Rica","Suriname","Togo"],["Kosovo","Macao SAR China","Curaçao"],["Nauru","Kosovo","Aruba"],["Bahamas","Macao SAR China","Bangladesh"],["Japan","St. Barthélemy","U.S. Virgin Islands"],["Chile","Poland","Bulgaria"],["Malawi","Mozambique","Kenya"],["Micronesia (Federated States of)","Uzbekistan","Somalia"],["Austria","Latvia","Hungary"],["Gabon","Lesotho","São Tomé & Príncipe"],["Latvia","Hungary","Netherlands"],["Micronesia (Federated States of)","Fiji","Cameroon"],["Colombia","Lithuania","Myanmar (Burma)"],["Botswana","Finland","Micronesia (Federated States of)"],["Iraq","Tajikistan","Hungary"],["Palestinian Territories","Jordan","United Arab Emirates"],["Guyana","Nepal","São Tomé & Príncipe"],["China","Morocco","Isle of Man"],["Liechtenstein","Kuwait","Equatorial Guinea"],["Faroe Islands","Botswana","Micronesia (Federated States of)"],["Tuvalu","Micronesia (Federated States of)","Somalia"],["South Georgia & South Sandwich Islands","Anguilla","Montserrat"],["Somalia","Argentina","St. Lucia"],["Finland","Micronesia (Federated States of)","Mayotte"],["Mexico","Italy","Ireland"],["Sweden","Åland Islands","Sierra Leone"],["Guernsey","Georgia","Northern Ireland"],["England","Guernsey","Georgia"],["Somalia","Micronesia (Federated States of)","Kazakhstan"],["San Marino","Djibouti","Oman"],["Nepal","Morocco","Wallis & Futuna"],["Lithuania","Morocco","Venezuela"],["Guernsey","England","Northern Ireland"],["Mozambique","Ukraine","Guinea"],["England","Georgia","Northern Ireland"],["Bolivia","Belarus","Burkina Faso"],["Poland","Greenland","Bulgaria"],["Poland","Gibraltar","Slovakia"],["Armenia","Burkina Faso","Vanuatu"],["Barbados","Guyana","Côte d’Ivoire"],["Bangladesh","Nauru","Saudi Arabia"],["Kuwait","Latvia","Austria"],["Argentina","Micronesia (Federated States of)","Somalia"],["Falkland Islands","Montserrat","Pitcairn Islands"],["Micronesia (Federated States of)","Somalia","Nigeria"],["Belize","Laos","Maldives"],["Burkina Faso","Colombia","Oman"],["São Tomé & Príncipe","Eritrea","Bangladesh"],["Tunisia","China","Isle of Man"],["Australia","New Zealand","St. Helena"],["Nicaragua","Somalia","Argentina"],["Paraguay","Netherlands","Hungary"],["Liechtenstein","Samoa","Antigua & Barbuda"],["Netherlands","India","Latvia"],["Monaco","Singapore","Kiribati"],["Italy","Mexico","France"],["Uruguay","Argentina","Micronesia (Federated States of)"],["China","Morocco","Vietnam"],["Hungary","Niger","Paraguay"],["Fiji","Botswana","Micronesia (Federated States of)"],["Egypt","Yemen","Tajikistan"],["Equatorial Guinea","Latvia","Austria"],["El Salvador","Nicaragua","Sierra Leone"],["Mexico","Ireland","France"],["Cyprus","St. Barthélemy","Japan"],["Bangladesh","Cocos (Keeling) Islands","Zambia"],["Palestinian Territories","Western Sahara","United Arab Emirates"],["St. Barthélemy","Cyprus","U.S. Virgin Islands"],["Malawi","Bangladesh","Cocos (Keeling) Islands"],["Vietnam","Tunisia","China"],["North Korea","Eswatini","Nepal"],["Monaco","Indonesia","Singapore"],["Benin","Czechia","India"],["Zambia","Samoa","Liechtenstein"],["Cambodia","Eswatini","New Caledonia"],["St. Barthélemy","Japan","Cyprus"],["Equatorial Guinea","United Arab Emirates","Ethiopia"],["British Virgin Islands","St. Helena","Montserrat"],["Somalia","Kosovo","Micronesia (Federated States of)"],["Maldives","Guam","Mauritania"],["French Polynesia","Austria","Latvia"],["Micronesia (Federated States of)","Argentina","Guatemala"],["Samoa","Haiti","Morocco"],["Montenegro","Morocco","North Macedonia"],["United States Minor Outlying Islands (the)","United States","Thailand"],["El Salvador","Nicaragua","Iceland"],["Venezuela","Myanmar (Burma)","Colombia"],["Paraguay","Netherlands","Hungary"],["Austria","Hungary","Netherlands"],["Gambia","Vanuatu","Angola"],["Isle of Man","China","Wallis & Futuna"],["Indonesia","Singapore","Serbia"],["Romania","Chad","Andorra"],["China","Sri Lanka","North Macedonia"],["Mexico","Italy","Ireland"],["Qatar","Bahrain","Sint Maarten"],["Kosovo","Macao SAR China","Nauru"],["China","Isle of Man","Morocco"],["Senegal","Chad","Romania"],["Lithuania","Venezuela","Bhutan"],["Morocco","Isle of Man","Maldives"],["Kosovo","Bangladesh","Saudi Arabia"],["Kosovo","Macao SAR China","Bangladesh"],["São Tomé & Príncipe","Turkmenistan","Bangladesh"],["Laos","Maldives","Morocco"],["Cayman Islands","Falkland Islands","South Georgia & South Sandwich Islands"],["Bahrain","Qatar","Madagascar"],["Gambia","Bolivia","Belarus"],["Laos","Morocco","Mauritania"],["Kenya","Bangladesh","Germany"],["Italy","France","Saint Martin (French part)"],["Samoa","Serbia","Monaco"],["French Guiana","Germany","Ukraine"],["Bangladesh","Kosovo","Macao SAR China"],["Azerbaijan","Sweden","Åland Islands"],["India","Tajikistan","Hungary"],["Nigeria","Mexico","Italy"],["Norfolk Island","Guatemala","Italy"],["El Salvador","Iceland","Honduras"],["Paraguay","Hungary","Luxembourg"],["Latvia","Austria","Hungary"],["Bangladesh","Kosovo","Nauru"],["Curaçao","St. Helena","New Zealand"],["Bhutan","Spain","North Macedonia"],["Cook Islands","St. Helena","Cayman Islands"],["Guinea-Bissau","Belarus","Chile"],["Micronesia (Federated States of)","French Southern Territories","Ireland"],["France","Saint Martin (French part)","Mexico"],["Lebanon","Thailand","Austria"],["Angola","Timor-Leste","Gambia"],["Liechtenstein","Qatar","Ukraine"],["Qatar","Sint Maarten","Madagascar"],["Gibraltar","Greenland","Czechia"],["Guyana","Kosovo","Aruba"],["Turks & Caicos Islands","St. Helena","Falkland Islands"],["Thailand","French Polynesia","Morocco"],["Western Sahara","Jordan","United Arab Emirates"],["Benin","Mali","Timor-Leste"],["Somalia","Kazakhstan","Antarctica"],["Netherlands","Luxembourg","Hungary"],["Bahrain","Madagascar","Malta"],["Kosovo","Liechtenstein","Philippines"],["Chad","Moldova","Andorra"],["Monaco","Singapore","Indonesia"],["Bulgaria","Slovenia","Slovakia"],["Ukraine","Aruba","Azerbaijan"],["Macao SAR China","Bangladesh","Brazil"],["Kosovo","Nauru","Macao SAR China"],["Bolivia","Ghana","Burkina Faso"],["Egypt","Yemen","Iraq"],["Åland Islands","Gabon","New Caledonia"],["Monaco","Indonesia","Serbia"],["Cayman Islands","New Zealand","Pitcairn Islands"],["Russia","Slovakia","Bulgaria"],["Latvia","Austria","Hungary"],["Russia","Bulgaria","Slovenia"],["Nicaragua","El Salvador","Iceland"],["Micronesia (Federated States of)","Argentina","Japan"],["Mali","Romania","Chad"],["Micronesia (Federated States of)","Kazakhstan","Antarctica"],["Costa Rica","Thailand","Cuba"],["Malawi","Bangladesh","Kenya"],["Gabon","Guyana","Sweden"],["Nicaragua","Iceland","Sierra Leone"],["Madagascar","Qatar","Burkina Faso"],["United Arab Emirates","El Salvador","Iceland"],["Cambodia","North Korea","Kosovo"],["Pitcairn Islands","British Virgin Islands","Cayman Islands"],["Romania","Moldova","Andorra"],["Kosovo","Somalia","Micronesia (Federated States of)"],["Martinique","Gambia","Curaçao"],["Suriname","Puerto Rico","Morocco"],["Hungary","Niger","India"],["Kosovo","Bangladesh","Macao SAR China"],["Morocco","Isle of Man","Wallis & Futuna"],["Cocos (Keeling) Islands","Christmas Island","Bangladesh"],["Switzerland","Hong Kong SAR China","Kyrgyzstan"],["Morocco","China","Isle of Man"],["China","Isle of Man","Morocco"],["Morocco","Isle of Man","China"],["Fiji","Kazakhstan","Somalia"],["Samoa","Wallis & Futuna","China"],["Bangladesh","Macao SAR China","Turkmenistan"],["Rwanda","Mozambique","Liechtenstein"],["Spain","Morocco","Isle of Man"],["Liberia","Micronesia (Federated States of)","Argentina"],["Liberia","Micronesia (Federated States of)","Argentina"],["Israel","Micronesia (Federated States of)","Faroe Islands"],["Nicaragua","El Salvador","Iceland"],["Bhutan","Cyprus","St. Barthélemy"],["Barbados","Guinea","Chad"],["Lithuania","Myanmar (Burma)","Colombia"],["Cayman Islands","Turks & Caicos Islands","Montserrat"],["Japan","St. Barthélemy","Cyprus"],["Kyrgyzstan","China","Albania"],["Gambia","Libya","Burkina Faso"],["China","Morocco","Isle of Man"],["Taiwan","Morocco","Wallis & Futuna"],["Macao SAR China","Somalia","Northern Mariana Islands"],["Iraq","Tajikistan","Hungary"],["St. Barthélemy","Cyprus","England"],["Gambia","Vanuatu","Burkina Faso"],["Cocos (Keeling) Islands","Turkmenistan","Christmas Island"],["Bahrain","Qatar","Morocco"]],"iso2c":["AD","AE","AF","AG","AI","AL","AM","AO","AQ","AR","AS","AT","AU","AW","AX","AZ","BA","BB","BD","BE","BF","BG","BH","BI","BJ","BL","BM","BN","BO","BQ","BR","BS","BT","BV","BW","BY","BZ","CA","CC","CD","CF","CG","CH","CI","CK","CL","CM","CN","CO","CR","CU","CV","CW","CX","CY","CZ","DE","DJ","DK","DM","DO","DZ","EC","EE","EG","EH","ER","ES","ET","FI","FJ","FK","FM","FO","FR","GA","GB-ENG","GB-NIR","GB-SCT","GB-WLS","GB","GD","GE","GF","GG","GH","GI","GL","GM","GN","GP","GQ","GR","GS","GT","GU","GW","GY","HK","HM","HN","HR","HT","HU","ID","IE","IL","IM","IN","IO","IQ","IR","IS","IT","JE","JM","JO","JP","KE","KG","KH","KI","KM","KN","KP","KR","KW","KY","KZ","LA","LB","LC","LI","LK","LR","LS","LT","LU","LV","LY","MA","MC","MD","ME","MF","MG","MH","MK","ML","MM","MN","MO","MP","MQ","MR","MS","MT","MU","MV","MW","MX","MY","MZ","NA","NC","NE","NF","NG","NI","NL","NO","NP","NR","NU","NZ","OM","PA","PE","PF","PG","PH","PK","PL","PM","PN","PR","PS","PT","PW","PY","QA","RE","RO","RS","RU","RW","SA","SB","SC","SD","SE","SG","SH","SI","SJ","SK","SL","SM","SN","SO","SR","SS","ST","SV","SX","SY","SZ","TC","TD","TF","TG","TH","TJ","TK","TL","TM","TN","TO","TR","TT","TV","TW","TZ","UA","UG","UM","US","UY","UZ","VA","VC","VE","VG","VI","VN","VU","WF","WS","XK","YE","YT","ZA","ZM","ZW"],"currency":["Euro","UAE Dirham","Afghani","East Caribbean Dollar","East Caribbean Dollar","Lek","Armenian Dram","Kwanza","None (Multiple Currencies)","Argentine Peso","US Dollar","Euro","Australian Dollar","Aruban Florin","Euro","Azerbaijan Manat","Convertible Mark","Barbados Dollar","Taka","Euro","CFA Franc BCEAO","Euro","Bahraini Dinar","Burundi Franc","CFA Franc BCEAO","Euro","Bermudian Dollar","Brunei Dollar","Boliviano","US Dollar","Brazilian Real","Bahamian Dollar","Ngultrum","Norwegian Krone","Pula","Belarusian Ruble","Belize Dollar","Canadian Dollar","Australian Dollar","Congolese Franc","CFA Franc BEAC","CFA Franc BEAC","Swiss Franc","CFA Franc BCEAO","New Zealand Dollar","Chilean Peso","CFA Franc BEAC","Yuan Renminbi","Colombian Peso","Costa Rican Colon","Cuban Peso","Cabo Verde Escudo","Caribbean Guilder","Australian Dollar","Euro","Czech Koruna","Euro","Djibouti Franc","Danish Krone","East Caribbean Dollar","Dominican Peso","Algerian Dinar","US Dollar","Euro","Egyptian Pound","Moroccan Dirham","Nakfa","Euro","Ethiopian Birr","Euro","Fiji Dollar","Falkland Islands Pound","US Dollar","Danish Krone","Euro","CFA Franc BEAC","Pound Sterling","Pound Sterling","Pound Sterling","Pound Sterling","Pound Sterling","East Caribbean Dollar","Lari","Euro","Pound Sterling","Ghana Cedi","Gibraltar Pound","Danish Krone","Dalasi","Guinean Franc","Euro","CFA Franc BEAC","Euro","Falkland Islands Pound","Quetzal","US Dollar","CFA Franc BCEAO","Guyana Dollar","Hong Kong Dollar","Australian Dollar","Lempira","Euro","Gourde","Forint","Rupiah","Euro","New Israeli Sheqel","Pound Sterling","Indian Rupee","US Dollar","Iraqi Dinar","Iranian Rial","Iceland Krona","Euro","Pound Sterling","Jamaican Dollar","Jordanian Dinar","Yen","Kenyan Shilling","Som","Riel","Australian Dollar","Comorian Franc","East Caribbean Dollar","North Korean Won","Won","Kuwaiti Dinar","Cayman Islands Dollar","Tenge","Lao Kip","Lebanese Pound","East Caribbean Dollar","Swiss Franc","Sri Lanka Rupee","Liberian Dollar","Loti","Euro","Euro","Euro","Libyan Dinar","Moroccan Dirham","Euro","Moldovan Leu","Euro","Euro","Malagasy Ariary","US Dollar","Denar","CFA Franc BCEAO","Kyat","Tugrik","Pataca","US Dollar","Euro","Ouguiya","East Caribbean Dollar","Euro","Mauritius Rupee","Rufiyaa","Malawi Kwacha","Mexican Peso","Malaysian Ringgit","Mozambique Metical","Namibia Dollar","CFP Franc","CFA Franc BCEAO","Australian Dollar","Naira","Cordoba Oro","Euro","Norwegian Krone","Nepalese Rupee","Australian Dollar","New Zealand Dollar","New Zealand Dollar","Rial Omani","Balboa","Sol","CFP Franc","Kina","Philippine Peso","Pakistan Rupee","Zloty","Euro","New Zealand Dollar","US Dollar","Israeli New Shekel / Jordanian Dinar","Euro","US Dollar","Guarani","Qatari Rial","Euro","Romanian Leu","Serbian Dinar","Russian Ruble","Rwanda Franc","Saudi Riyal","Solomon Islands Dollar","Seychelles Rupee","Sudanese Pound","Swedish Krona","Singapore Dollar","Saint Helena Pound","Euro","Norwegian Krone","Euro","Leone","Euro","CFA Franc BCEAO","Somali Shilling","Surinam Dollar","South Sudanese Pound","Dobra","US Dollar","Caribbean Guilder","Syrian Pound","Lilangeni","US Dollar","CFA Franc BEAC","Euro","CFA Franc BCEAO","Baht","Somoni","New Zealand Dollar","US Dollar","Turkmenistan New Manat","Tunisian Dinar","Pa’anga","Turkish Lira","Trinidad and Tobago Dollar","Australian Dollar","New Taiwan Dollar","Tanzanian Shilling","Hryvnia","Uganda Shilling","US Dollar","US Dollar","Peso Uruguayo","Uzbekistan Sum","Euro","East Caribbean Dollar","Bolívar Soberano","US Dollar","US Dollar","Dong","Vatu","CFP Franc","Tala","Euro","Yemeni Rial","Euro","Rand","Zambian Kwacha","Zimbabwe Gold"],"population":["81,938","10,876,981","42,647,492","93,772","15,900","2,714,617","3,033,500","37,885,849","~1,000–5,000 (Seasonal)","45,696,159","46,765","9,178,482","27,204,809","107,624","30,500","10,202,850","3,164,253","282,467","173,562,364","11,876,844","23,548,781","6,444,366","1,588,670","14,047,786","14,462,724","10,900","64,636","462,721","12,413,315","27,700","211,998,573","401,283","791,524","0 (Uninhabited)","2,521,139","9,133,712","417,072","41,288,599","600","109,276,265","5,330,690","6,332,961","9,034,102","31,934,230","15,000","19,764,771","29,123,744","1,408,975,000","52,886,363","5,129,910","10,979,783","524,877","155,900","1,700","1,358,282","10,882,164","83,510,950","1,168,722","5,976,992","66,205","11,427,557","46,814,308","18,135,478","1,371,986","116,538,258","600,000","3,535,603","48,807,137","132,059,767","5,637,214","928,784","3,700","113,160","54,719","68,516,699","2,538,952","57,100,000","1,910,000","5,490,000","3,160,000","69,226,000","117,207","3,673,850","312,000","64,000","34,427,414","39,329","56,836","2,759,988","14,754,785","384,000","1,892,516","10,388,805","30 (Seasonal)","18,406,359","167,777","2,201,352","831,087","7,524,100","0 (Uninhabited)","10,825,703","3,866,300","11,772,557","9,562,314","283,487,931","5,380,257","9,974,400","84,160","1,450,935,791","3,000","46,042,015","91,567,738","404,610","58,986,023","103,000","2,839,175","11,552,876","123,975,371","56,432,944","7,224,614","17,638,801","134,518","866,628","46,843","26,498,823","51,751,065","4,973,861","74,457","20,592,571","7,769,819","5,805,962","179,744","40,197","21,916,000","5,612,817","2,337,423","2,888,055","677,717","1,862,441","7,381,023","38,081,173","38,631","2,389,275","623,831","26,129","31,964,956","37,548","1,792,179","24,478,595","54,500,091","3,524,788","687,000","44,278","349,000","5,169,395","4,400","574,346","1,259,509","527,799","21,655,286","130,861,007","35,557,673","34,631,766","3,030,131","292,639","27,032,412","2,200","232,679,478","6,916,140","17,994,237","5,572,272","29,651,054","11,947","1,680","5,338,500","5,281,538","4,515,577","34,217,848","281,807","10,576,502","115,843,670","251,269,164","36,554,707","5,800","47","3,203,295","5,289,152","10,701,636","17,695","6,929,153","2,857,822","885,000","19,069,340","6,587,202","143,533,851","14,256,567","35,300,280","819,198","121,354","50,448,963","10,569,709","6,036,860","5,300","2,126,324","2,900","5,422,069","8,642,022","33,977","18,501,984","19,009,151","634,431","11,943,408","235,536","6,338,193","43,350","24,672,760","1,242,822","46,535","20,299,123","200 (Seasonal)","9,515,236","71,668,011","10,590,927","1,900","1,400,638","7,494,498","12,277,109","104,175","85,518,661","1,368,333","9,646","23,400,000","68,560,157","37,860,221","50,015,092","300","340,110,988","3,386,588","36,361,859","764","100,616","28,405,543","39,471","104,377","100,987,686","327,777","11,500","218,019","1,760,000","40,583,164","320,000","64,007,187","21,314,956","16,634,373"],"capital":["Andorra la Vella","Abu Dhabi","Kabul","Saint John's","The Valley","Tirana","Yerevan","Luanda","None (Research Stations)","Buenos Aires","Pago Pago","Vienna","Canberra","Oranjestad","Mariehamn","Baku","Sarajevo","Bridgetown","Dhaka","Brussels","Ouagadougou","Sofia","Manama","Bujumbura","Porto Novo","Gustavia","Hamilton","Bandar Seri Begawan","Sucre","Kralendijk","Brasilia","Nassau","Thimphu","None (Uninhabited)","Gaborone","Minsk","Belmopan","Ottawa","West Island","Kinshasa","Bangui","Brazzaville","Bern","Yamoussoukro","Avarua","Santiago","Yaounde","Beijing","Bogota","San Jose","Havanna","Praia","Willemstad","Flying Fish Cove","Nicosia","Prague","Berlin","Jibuti","Copenhagen","Roseau","Santo Domingo","Algiers","Quito","Tallinn","Cairo","al-'Ayun","Asmara","Madrid","Addis Abeba","Helsinki","Suva","Port Stanley","Palikir","Torshavn","Paris","Libreville","London","Belfast","Edinburgh","Cardiff","London","Saint George's","Tbilisi","Cayenne","Saint Peter Port","Accra","Gibraltar","Nuuk","Banjul","Conakry","Basse-Terre","Malabo","Athens","King Edward Point","Guatemala","Agana","Bissau","Georgetown","Hong Kong","None (Uninhabited)","Tegucigalpa","Zagreb","Port-au-Prince","Budapest","Jakarta","Dublin","Jerusalem","Douglas","Ni Dilli","Diego Garcia","Baghdad","Tehran","Reykjavik","Rome","Saint Helier","Kingston","'Amman","Tokyo","Nairobi","Biskek","Phnum Penh","Bairiki","Moroni","Basseterre","Pyongyang","Seoul","al-Kuwayt","George Town","Astana","Vientiane","Bayrut","Castries","Vaduz","Colombo","Monrovia","Maseru","Vilnius","Luxemburg","Riga","Tripoli","Rabat","Monaco-Ville","Chisinau","Podgorica","Marigot","Antananarivo","Rita","Skopje","Bamako","Rangoon","Ulaanbaatar","Macau","Susupe","Fort-de-France","Nouakchott","Plymouth / Brades","Valletta","Port Louis","Male","Lilongwe","Mexico City","Kuala Lumpur","Maputo","Windhoek","Noumea","Niamey","Kingston","Abuja","Managua","Amsterdam","Oslo","Kathmandu","Yaren","Alofi","Wellington","Muscat","Panama","Lima","Papeete","Port Moresby","Manila","Islamabad","Warsaw","Saint-Pierre","Adamstown","San Juan","Ramallah / East Jerusalem","Lisbon","Koror","Asuncion","Doha","Saint-Denis","Bucharest","Belgrade","Moscow","Kigali","Riyadh","Honiara","Victoria","Khartoum","Stockholm","Singapore","Jamestown","Ljubljana","Longyearbyen","Bratislava","Freetown","San Marino","Dakar","Mogadishu","Paramaribo","Juba","Sao Tome","San Salvador","Philipsburg","Damascus","Mbabane","Cockburn Town","N'Djamena","Port-aux-Français","Lome","Bangkok","Dushanbe","Fakaofo","Dili","Asgabat","Tunis","Nuku'alofa","Ankara","Port of Spain","Vaiaku","Taipei","Dodoma","Kiev","Kampala","Washington, D.C.","Washington","Montevideo","Tashkent","Vatican City","Kingstown","Caracas","Road Town","Charlotte Amalie","Ha Noi","Vila","Mata'utu","Apia","Pristina","San'a","Dzaoudzi","Pretoria","Lusaka","Harare"],"animal":["Bearded Vulture","Arabian Oryx","Snow Leopard","Fallow Deer","Zenaida Dove","Golden Eagle","Caucasian Eagle","Giant Sable Antelope","Emperor Penguin","Rufous Hornero","Samoan Flying Fox","Black Eagle","Red Kangaroo","Burrowing Owl","White-tailed Eagle","Karabakh Horse","Tornjak (Shepherd Dog)","Brown Pelican","Royal Bengal Tiger","Leo Belgicus (Lion)","White Stallion","Lion","Arabian Oryx","Lion","Sitatunga Antelope","Brown Pelican","Humpback Whale","White-bellied Sea Eagle","Llama & Andean Condor","Caribbean Flamingo","Jaguar","Blue Marlin & Flamingo","Takin","Chinstrap Penguin","Plains Zebra","European Bison","Baird's Tapir","North American Beaver","Green Sea Turtle","Okapi","African Elephant","Western Lowland Gorilla","Alpine Ibex","African Elephant","Rarotonga Monarch","Andean Condor & Huemul","Lion","Giant Panda","Andean Condor","White-tailed Deer","Cuban Trogon","Grey-headed Kingfisher","Troupial","Abbott's Booby","Cypriot Mouflon","Double-tailed Lion","Federal Eagle (Bundesadler)","Djibouti Spurfowl","Mute Swan","Sisserou Parrot","Palmchat","Fennec Fox","Andean Condor","Gray Wolf","Steppe Eagle","Dromedary Camel","Arabian Camel","Hispanic Bull","Abyssinian Lion","Brown Bear","Collared Lory","Rockhopper Penguin","Chuuk Monarch","Eurasian Oystercatcher","Gallic Rooster","Black Panther","Lion","Irish Elk","Unicorn","Red Dragon (Y Ddraig Goch)","Lion","Grenada Dove","Gray Wolf","Harpy Eagle","Guernsey Cow","Tawny Eagle","Barbary Macaque","Polar Bear","Spotted Hyena","African Elephant","Guadeloupe Raccoon","Giraffe","Common Dolphin","King Penguin","Resplendent Quetzal","Guam Rail (Ko'ko')","African Lion","Jaguar","Chinese White Dolphin","King Penguin","White-tailed Deer","Pine Marten","Hispaniolan Trogon","Turul (Falcon)","Komodo Dragon","Irish Hare","Hoopoe","Manx Cat","Royal Bengal Tiger","Hawksbill Sea Turtle","Chukar Partridge","Asiatic Lion","Gyrfalcon","Italian Wolf","Jersey Cow","Red-billed Streamertail","Arabian Oryx","Green Pheasant","East African Lion","Snow Leopard","Kouprey","Magnificent Frigatebird","Livingstone's Fruit Bat","Vervet Monkey","Chollima (Winged Horse)","Siberian Tiger","Arabian Camel","Grand Cayman Parrot","Golden Eagle","Asian Elephant","Striped Hyena","Saint Lucia Parrot","Common Kestrel","Sri Lankan Junglefowl","Asiatic Lion","Black Rhinoceros","White Stork","Red Lion","Two-spotted Ladybug","Barbary Lion","Barbary Lion","European Rabbit","Aurochs","Golden Eagle","Brown Pelican","Ring-tailed Lemur","Black Noddy","Balkan Lynx","African Vulture","Indochinese Tiger","Przewalski's Horse","Black-faced Spoonbill","Mariana Fruit Dove","Martinique Oriole","Barbary Lion","Montserrat Oriole","Pharaoh Hound","Dodo","Yellowfin Tuna","Thomson's Gazelle","Golden Eagle","Malayan Tiger","African Elephant","Gemsbok (Oryx)","Kagu","Dama Gazelle","Norfolk Island Green Parrot","Black Crowned Crane","Turquoise-browed Motmot","Black-tailed Godwit","Eurasian Elk (Moose)","Cow","Great Frigatebird","Coconut Crab","Kiwi","Arabian Oryx","Harpy Eagle","Vicuña","Tahiti Monarch","Raggiana Bird-of-Paradise","Carabao (Water Buffalo)","Markhor","White-tailed Eagle","Atlantic Puffin","Pitcairn Reed Warbler","Coquí Frog","Palestine Sunbird","Iberian Wolf","Palau Fruit Dove","Pampas Fox","Arabian Oryx","Bourbon Cuckoo-shrike","Eurasian Lynx","Gray Wolf","Eurasian Brown Bear","African Leopard","Arabian Camel","Saltwater Crocodile","Striped Dolphin","Secretarybird","Eurasian Elk (Moose)","Merlion / Lion","Saint Helena Plover","Lipizzan Horse","Svalbard Reindeer","Tatra Chamois","Western Chimpanzee","Horse","African Lion","African Leopard","Lesser Kiskadee","African Fish Eagle","African Grey Parrot","Turquoise-browed Motmot","Brown Pelican","Syrian Brown Bear","Thomson's Gazelle","Brown Pelican","Goat & Lion","Southern Elephant Seal","Hippopotamus","Thai Elephant","Marco Polo Sheep","Whimbrel","Saltwater Crocodile","Akhal-Teke Horse","Cream-colored Courser","Humpback Whale","Gray Wolf","Scarlet Ibis & Cocrico","Bottlenose Dolphin","Formosan Black Bear","Masai Giraffe","Common Nightingale","Grey Crowned Crane","Laysan Albatross","Bald Eagle & American Bison","Southern Lapwing","Snow Leopard","White Dove","Saint Vincent Parrot","Venezuelan Troupial","Mourning Dove","Bananaquit","Water Buffalo","Dugong","Red-footed Booby","Tooth-billed Pigeon","Balkan Lynx","Arabian Leopard","Maki (Brown Lemur)","Springbok","African Fish Eagle","Sable Antelope"]}}]}
+</script>
+
+
+</head>
+
+<body>
+
+
+<header id="title-block-header">
+<h1 class="title">World Flag Challenge</h1>
+
+</header>
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+    background-color: #0b132b;
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(28, 37, 65, 0.9) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(58, 80, 107, 0.6) 0%, transparent 50%),
+      repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.02) 0px, rgba(255, 255, 255, 0.02) 2px, transparent 2px, transparent 14px),
+      repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.02) 0px, rgba(255, 255, 255, 0.02) 2px, transparent 2px, transparent 14px);
+    color: #f8fafc;
+    overflow-x: hidden;
+  }
+
+  /* Hide default Quarto title block */
+  #title-block-header {
+    display: none;
+  }
+
+  /* Hide raw OJS button input since we trigger it from our styled button */
+  .ojs-hidden-btn {
+    display: none;
+  }
+
+  /* Top and Bottom Decorative Ribbons */
+  .edge-ribbon {
+    width: 100%;
+    background: linear-gradient(90deg, #1e293b, #0f172a, #1e293b);
+    padding: 8px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+  }
+
+  .edge-ribbon.top {
+    border-bottom: 3px solid #f59e0b;
+  }
+
+  .edge-ribbon.bottom {
+    border-top: 3px solid #f59e0b;
+    margin-top: auto;
+  }
+
+  /* Geometric bunting stripe accent */
+  .bunting-trim {
+    height: 10px;
+    width: 100%;
+    background: repeating-linear-gradient(
+      90deg,
+      #ef4444 0px, #ef4444 24px,
+      #f59e0b 24px, #f59e0b 48px,
+      #10b981 48px, #10b981 72px,
+      #3b82f6 72px, #3b82f6 96px,
+      #8b5cf6 96px, #8b5cf6 120px
+    );
+  }
+
+  .flag-strip-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    overflow: hidden;
+    padding: 4px 12px;
+  }
+
+  .flag-strip-row img {
+    height: 24px;
+    width: 38px;
+    object-fit: cover;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  }
+
+  /* Main Arena Layout with Left/Right Side Pillars */
+  .arena-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    min-height: calc(100vh - 110px);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+
+  /* Decorative Side Pillars */
+  .side-pillar {
+    width: 110px;
+    flex-shrink: 0;
+    background: rgba(15, 23, 42, 0.75);
+    border: 2px solid rgba(245, 158, 11, 0.35);
+    border-radius: 18px;
+    padding: 14px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6), 0 8px 25px rgba(0, 0, 0, 0.4);
+    position: relative;
+  }
+
+  .side-pillar::before {
+    content: "✦";
+    color: #f59e0b;
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+  }
+
+  .side-pillar::after {
+    content: "✦";
+    color: #f59e0b;
+    font-size: 1.3rem;
+    margin-top: 4px;
+  }
+
+  .side-pillar img {
+    width: 72px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.45);
+    transition: transform 0.2s;
+  }
+
+  .side-pillar img:hover {
+    transform: scale(1.1);
+    border-color: #f59e0b;
+  }
+
+  @media (max-width: 900px) {
+    .side-pillar {
+      display: none;
+    }
+  }
+
+  /* Center Game Card */
+  .game-card {
+    flex: 1;
+    max-width: 820px;
+    margin: auto;
+    background: linear-gradient(145deg, rgba(30, 41, 59, 0.92), rgba(15, 23, 42, 0.95));
+    border: 2px solid rgba(245, 158, 11, 0.45);
+    border-radius: 24px;
+    padding: 2rem 2.25rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65), 0 0 30px rgba(59, 130, 246, 0.15);
+    text-align: center;
+  }
+
+  .badge-header {
+    display: inline-block;
+    background: rgba(245, 158, 11, 0.15);
+    border: 1px solid #f59e0b;
+    color: #fbbf24;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 16px;
+    border-radius: 999px;
+    margin-bottom: 0.75rem;
+  }
+
+  .question-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0.25rem 0 0.5rem 0;
+    color: #f8fafc;
+  }
+
+  .country-highlight {
+    color: #38bdf8;
+    text-shadow: 0 0 18px rgba(56, 189, 248, 0.35);
+    border-bottom: 3px dashed rgba(56, 189, 248, 0.5);
+  }
+
+  .flag-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .flag-option {
+    background: rgba(15, 23, 42, 0.75);
+    border: 3px solid rgba(148, 163, 184, 0.3);
+    border-radius: 16px;
+    padding: 1rem;
+    height: 185px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  }
+
+  .flag-option:hover {
+    transform: translateY(-4px);
+    border-color: #38bdf8;
+    background: rgba(30, 41, 59, 0.95);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5), 0 0 16px rgba(56, 189, 248, 0.25);
+  }
+
+  .flag-option img {
+    max-width: 100%;
+    max-height: 145px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .feedback-bar {
+    margin-top: 1.5rem;
+    padding: 0.85rem 1.25rem;
+    border-radius: 12px;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    font-size: 1.15rem;
+    font-weight: 600;
+    min-height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .next-btn {
+    margin-top: 1.25rem;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: #0f172a;
+    font-family: inherit;
+    font-size: 1.05rem;
+    font-weight: 800;
+    border: none;
+    border-radius: 999px;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.35);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+
+  .next-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.55);
+  }
+
+  /* Country Fact Card (shown upon correct answer) */
+  .fact-card {
+    display: none;
+    margin-top: 1.25rem;
+    padding: 1.25rem 1.5rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.9));
+    border: 2px solid #22c55e;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45), 0 0 20px rgba(34, 197, 94, 0.15);
+    text-align: left;
+    animation: fadeIn 0.25s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .fact-card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 0.85rem;
+    margin-bottom: 0.85rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+  }
+
+  .fact-card-header img {
+    width: 84px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .fact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.65rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    .fact-list {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .fact-item {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 0.55rem 0.85rem;
+    border-radius: 8px;
+    border-left: 3px solid #f59e0b;
+  }
+
+  .fact-label {
+    color: #94a3b8;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  .fact-value {
+    color: #f8fafc;
+    font-weight: 600;
+  }
+</style>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="575" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 574;"><span id="cb1-575"><a href="#cb1-575" aria-hidden="true" tabindex="-1"></a>countries <span class="op">=</span> <span class="fu">transpose</span>(flag_data)</span>
+<span id="cb1-576"><a href="#cb1-576" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-577"><a href="#cb1-577" aria-hidden="true" tabindex="-1"></a><span class="co">// Hidden reactive counter for drawing a new question</span></span>
+<span id="cb1-578"><a href="#cb1-578" aria-hidden="true" tabindex="-1"></a>viewof next_btn <span class="op">=</span> {</span>
+<span id="cb1-579"><a href="#cb1-579" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> form <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">button</span>(<span class="st">"Next Question"</span><span class="op">,</span> { <span class="dt">value</span><span class="op">:</span> <span class="dv">0</span> })<span class="op">;</span></span>
+<span id="cb1-580"><a href="#cb1-580" aria-hidden="true" tabindex="-1"></a>  form<span class="op">.</span><span class="at">classList</span><span class="op">.</span><span class="fu">add</span>(<span class="st">"ojs-hidden-btn"</span>)<span class="op">;</span></span>
+<span id="cb1-581"><a href="#cb1-581" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> form<span class="op">;</span></span>
+<span id="cb1-582"><a href="#cb1-582" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-583"><a href="#cb1-583" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-584"><a href="#cb1-584" aria-hidden="true" tabindex="-1"></a><span class="co">// Choose a random country each time the page loads or "Next Question" is clicked</span></span>
+<span id="cb1-585"><a href="#cb1-585" aria-hidden="true" tabindex="-1"></a>question <span class="op">=</span> {</span>
+<span id="cb1-586"><a href="#cb1-586" aria-hidden="true" tabindex="-1"></a>  next_btn<span class="op">;</span></span>
+<span id="cb1-587"><a href="#cb1-587" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> idx <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">floor</span>(<span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>() <span class="op">*</span> countries<span class="op">.</span><span class="at">length</span>)<span class="op">;</span></span>
+<span id="cb1-588"><a href="#cb1-588" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> target <span class="op">=</span> countries[idx]<span class="op">;</span></span>
+<span id="cb1-589"><a href="#cb1-589" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-590"><a href="#cb1-590" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> options <span class="op">=</span> [</span>
+<span id="cb1-591"><a href="#cb1-591" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">file</span><span class="op">:</span> target<span class="op">.</span><span class="at">file</span><span class="op">,</span> <span class="dt">name</span><span class="op">:</span> target<span class="op">.</span><span class="at">name</span><span class="op">,</span> <span class="dt">correct</span><span class="op">:</span> <span class="kw">true</span> }<span class="op">,</span></span>
+<span id="cb1-592"><a href="#cb1-592" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">file</span><span class="op">:</span> target<span class="op">.</span><span class="at">similar</span>[<span class="dv">0</span>]<span class="op">,</span> <span class="dt">name</span><span class="op">:</span> target<span class="op">.</span><span class="at">similar_names</span>[<span class="dv">0</span>]<span class="op">,</span> <span class="dt">correct</span><span class="op">:</span> <span class="kw">false</span> }<span class="op">,</span></span>
+<span id="cb1-593"><a href="#cb1-593" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">file</span><span class="op">:</span> target<span class="op">.</span><span class="at">similar</span>[<span class="dv">1</span>]<span class="op">,</span> <span class="dt">name</span><span class="op">:</span> target<span class="op">.</span><span class="at">similar_names</span>[<span class="dv">1</span>]<span class="op">,</span> <span class="dt">correct</span><span class="op">:</span> <span class="kw">false</span> }<span class="op">,</span></span>
+<span id="cb1-594"><a href="#cb1-594" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">file</span><span class="op">:</span> target<span class="op">.</span><span class="at">similar</span>[<span class="dv">2</span>]<span class="op">,</span> <span class="dt">name</span><span class="op">:</span> target<span class="op">.</span><span class="at">similar_names</span>[<span class="dv">2</span>]<span class="op">,</span> <span class="dt">correct</span><span class="op">:</span> <span class="kw">false</span> }</span>
+<span id="cb1-595"><a href="#cb1-595" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">;</span></span>
+<span id="cb1-596"><a href="#cb1-596" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-597"><a href="#cb1-597" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Shuffle the 4 flag options</span></span>
+<span id="cb1-598"><a href="#cb1-598" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> options<span class="op">.</span><span class="at">length</span> <span class="op">-</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&gt;</span> <span class="dv">0</span><span class="op">;</span> i<span class="op">--</span>) {</span>
+<span id="cb1-599"><a href="#cb1-599" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> j <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">floor</span>(<span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>() <span class="op">*</span> (i <span class="op">+</span> <span class="dv">1</span>))<span class="op">;</span></span>
+<span id="cb1-600"><a href="#cb1-600" aria-hidden="true" tabindex="-1"></a>    [options[i]<span class="op">,</span> options[j]] <span class="op">=</span> [options[j]<span class="op">,</span> options[i]]<span class="op">;</span></span>
+<span id="cb1-601"><a href="#cb1-601" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-602"><a href="#cb1-602" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-603"><a href="#cb1-603" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> { target<span class="op">,</span> options }<span class="op">;</span></span>
+<span id="cb1-604"><a href="#cb1-604" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-605"><a href="#cb1-605" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-606"><a href="#cb1-606" aria-hidden="true" tabindex="-1"></a><span class="co">// Decorative flag lists for top, bottom, left, and right borders</span></span>
+<span id="cb1-607"><a href="#cb1-607" aria-hidden="true" tabindex="-1"></a>top_flags <span class="op">=</span> [<span class="st">"us.png"</span><span class="op">,</span> <span class="st">"gb.png"</span><span class="op">,</span> <span class="st">"fr.png"</span><span class="op">,</span> <span class="st">"de.png"</span><span class="op">,</span> <span class="st">"jp.png"</span><span class="op">,</span> <span class="st">"br.png"</span><span class="op">,</span> <span class="st">"ca.png"</span><span class="op">,</span> <span class="st">"au.png"</span><span class="op">,</span> <span class="st">"in.png"</span><span class="op">,</span> <span class="st">"it.png"</span><span class="op">,</span> <span class="st">"es.png"</span><span class="op">,</span> <span class="st">"mx.png"</span><span class="op">,</span> <span class="st">"kr.png"</span><span class="op">,</span> <span class="st">"za.png"</span><span class="op">,</span> <span class="st">"se.png"</span><span class="op">,</span> <span class="st">"no.png"</span><span class="op">,</span> <span class="st">"ch.png"</span><span class="op">,</span> <span class="st">"ar.png"</span><span class="op">,</span> <span class="st">"nl.png"</span><span class="op">,</span> <span class="st">"gr.png"</span>]</span>
+<span id="cb1-608"><a href="#cb1-608" aria-hidden="true" tabindex="-1"></a>bottom_flags <span class="op">=</span> [<span class="st">"NZ.png"</span><span class="op">,</span> <span class="st">"ie.png"</span><span class="op">,</span> <span class="st">"pt.png"</span><span class="op">,</span> <span class="st">"be.png"</span><span class="op">,</span> <span class="st">"at.png"</span><span class="op">,</span> <span class="st">"dk.png"</span><span class="op">,</span> <span class="st">"fi.png"</span><span class="op">,</span> <span class="st">"pl.png"</span><span class="op">,</span> <span class="st">"cz.png"</span><span class="op">,</span> <span class="st">"hu.png"</span><span class="op">,</span> <span class="st">"tr.png"</span><span class="op">,</span> <span class="st">"eg.png"</span><span class="op">,</span> <span class="st">"ke.png"</span><span class="op">,</span> <span class="st">"ng.png"</span><span class="op">,</span> <span class="st">"th.png"</span><span class="op">,</span> <span class="st">"vn.png"</span><span class="op">,</span> <span class="st">"ph.png"</span><span class="op">,</span> <span class="st">"my.png"</span><span class="op">,</span> <span class="st">"sg.png"</span><span class="op">,</span> <span class="st">"cl.png"</span>]<span class="op">.</span><span class="fu">map</span>(f <span class="kw">=&gt;</span> f<span class="op">.</span><span class="fu">toLowerCase</span>())</span>
+<span id="cb1-609"><a href="#cb1-609" aria-hidden="true" tabindex="-1"></a>left_flags <span class="op">=</span> [<span class="st">"cu.png"</span><span class="op">,</span> <span class="st">"JM.png"</span><span class="op">,</span> <span class="st">"pa.png"</span><span class="op">,</span> <span class="st">"co.png"</span><span class="op">,</span> <span class="st">"pe.png"</span><span class="op">,</span> <span class="st">"uy.png"</span><span class="op">,</span> <span class="st">"is.png"</span><span class="op">,</span> <span class="st">"ua.png"</span>]<span class="op">.</span><span class="fu">map</span>(f <span class="kw">=&gt;</span> f<span class="op">.</span><span class="fu">toLowerCase</span>())</span>
+<span id="cb1-610"><a href="#cb1-610" aria-hidden="true" tabindex="-1"></a>right_flags <span class="op">=</span> [<span class="st">"hr.png"</span><span class="op">,</span> <span class="st">"ro.png"</span><span class="op">,</span> <span class="st">"bg.png"</span><span class="op">,</span> <span class="st">"rs.png"</span><span class="op">,</span> <span class="st">"ma.png"</span><span class="op">,</span> <span class="st">"gh.png"</span><span class="op">,</span> <span class="st">"id.png"</span><span class="op">,</span> <span class="st">"np.png"</span>]</span>
+<span id="cb1-611"><a href="#cb1-611" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-612"><a href="#cb1-612" aria-hidden="true" tabindex="-1"></a><span class="co">// Full Page Decorated Game Layout</span></span>
+<span id="cb1-613"><a href="#cb1-613" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb1-614"><a href="#cb1-614" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> page <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;div&gt;</span></span>
+<span id="cb1-615"><a href="#cb1-615" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;!-- Top Decorative Banner --&gt;</span></span>
+<span id="cb1-616"><a href="#cb1-616" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div class="edge-ribbon top"&gt;</span></span>
+<span id="cb1-617"><a href="#cb1-617" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="flag-strip-row"&gt;</span></span>
+<span id="cb1-618"><a href="#cb1-618" aria-hidden="true" tabindex="-1"></a><span class="vs">        </span><span class="sc">${</span>top_flags<span class="op">.</span><span class="fu">map</span>(f <span class="kw">=&gt;</span> <span class="fu">html</span><span class="vs">`&lt;img src="flags/</span><span class="sc">${</span>f<span class="sc">}</span><span class="vs">" alt=""&gt;`</span>)<span class="sc">}</span></span>
+<span id="cb1-619"><a href="#cb1-619" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;/div&gt;</span></span>
+<span id="cb1-620"><a href="#cb1-620" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;</span></span>
+<span id="cb1-621"><a href="#cb1-621" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div class="bunting-trim"&gt;&lt;/div&gt;</span></span>
+<span id="cb1-622"><a href="#cb1-622" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-623"><a href="#cb1-623" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;!-- Middle Arena: Left Pillar + Game Card + Right Pillar --&gt;</span></span>
+<span id="cb1-624"><a href="#cb1-624" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div class="arena-wrapper"&gt;</span></span>
+<span id="cb1-625"><a href="#cb1-625" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="side-pillar"&gt;</span></span>
+<span id="cb1-626"><a href="#cb1-626" aria-hidden="true" tabindex="-1"></a><span class="vs">        </span><span class="sc">${</span>left_flags<span class="op">.</span><span class="fu">map</span>(f <span class="kw">=&gt;</span> <span class="fu">html</span><span class="vs">`&lt;img src="flags/</span><span class="sc">${</span>f<span class="sc">}</span><span class="vs">" alt=""&gt;`</span>)<span class="sc">}</span></span>
+<span id="cb1-627"><a href="#cb1-627" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;/div&gt;</span></span>
+<span id="cb1-628"><a href="#cb1-628" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-629"><a href="#cb1-629" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="game-card"&gt;</span></span>
+<span id="cb1-630"><a href="#cb1-630" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="badge-header"&gt;🌍 Vexillology Lookalike Quiz&lt;/div&gt;</span></span>
+<span id="cb1-631"><a href="#cb1-631" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;h1 class="question-title"&gt;</span></span>
+<span id="cb1-632"><a href="#cb1-632" aria-hidden="true" tabindex="-1"></a><span class="vs">          Which flag belongs to &lt;span class="country-highlight"&gt;</span><span class="sc">${</span>question<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="at">name</span><span class="sc">}</span><span class="vs">&lt;/span&gt;?</span></span>
+<span id="cb1-633"><a href="#cb1-633" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/h1&gt;</span></span>
+<span id="cb1-634"><a href="#cb1-634" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;p style="color: #94a3b8; margin: 0;"&gt;</span></span>
+<span id="cb1-635"><a href="#cb1-635" aria-hidden="true" tabindex="-1"></a><span class="vs">          These 4 flags share similar colors and layouts—click the right one!</span></span>
+<span id="cb1-636"><a href="#cb1-636" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/p&gt;</span></span>
+<span id="cb1-637"><a href="#cb1-637" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-638"><a href="#cb1-638" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div id="grid" class="flag-grid"&gt;&lt;/div&gt;</span></span>
+<span id="cb1-639"><a href="#cb1-639" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-640"><a href="#cb1-640" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div id="feedback" class="feedback-bar" style="color: #cbd5e1;"&gt;</span></span>
+<span id="cb1-641"><a href="#cb1-641" aria-hidden="true" tabindex="-1"></a><span class="vs">          👆 Select one of the four flags above to test your eye!</span></span>
+<span id="cb1-642"><a href="#cb1-642" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
+<span id="cb1-643"><a href="#cb1-643" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-644"><a href="#cb1-644" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div id="fact-box" class="fact-card"&gt;</span></span>
+<span id="cb1-645"><a href="#cb1-645" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;div class="fact-card-header"&gt;</span></span>
+<span id="cb1-646"><a href="#cb1-646" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;img src="flags/</span><span class="sc">${</span>question<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="at">file</span><span class="sc">}</span><span class="vs">" alt="</span><span class="sc">${</span>question<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="at">name</span><span class="sc">}</span><span class="vs"> flag"&gt;</span></span>
+<span id="cb1-647"><a href="#cb1-647" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;div&gt;</span></span>
+<span id="cb1-648"><a href="#cb1-648" aria-hidden="true" tabindex="-1"></a><span class="vs">              &lt;div style="color: #4ade80; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px;"&gt;Country Fact File&lt;/div&gt;</span></span>
+<span id="cb1-649"><a href="#cb1-649" aria-hidden="true" tabindex="-1"></a><span class="vs">              &lt;div style="font-size: 1.4rem; font-weight: 800; color: #f8fafc;"&gt;</span><span class="sc">${</span>question<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="at">name</span><span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb1-650"><a href="#cb1-650" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/div&gt;</span></span>
+<span id="cb1-651"><a href="#cb1-651" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;/div&gt;</span></span>
+<span id="cb1-652"><a href="#cb1-652" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;ul class="fact-list"&gt;</span></span>
+<span id="cb1-653"><a href="#cb1-653" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;li class="fact-item"&gt;</span></span>
+<span id="cb1-654"><a href="#cb1-654" aria-hidden="true" tabindex="-1"></a><span class="vs">              &lt;span class="fact-label"&gt;🏳️ Country Name&lt;/span&gt;</span></span>
+<span id="cb1-655"><a href="#cb1-655" aria-hidden="true" tabindex="-1"></a><span class="vs">              &lt;span class="fact-value"&gt;</span><span class="sc">${</span>question<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="at">name</span><span class="sc">}</span><span class="vs">&lt;/span&gt;</span></span>
+<span id="cb1-656"><a href="#cb1-656" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/li&gt;</span></span>
+<span id="cb1-657"><a href="#cb1-657" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;li class="fact-item"&gt;</span></span>
+<span id="cb1-658"><a href="#cb1-658" aria-hidden="true" tabindex="-1"></a><span class="vs">              &lt;span class="fact-label"&gt;🏛️ Capital&lt;/span&gt;</span></span>
+<span id="cb1-659"><a href="#cb1-659" aria-hidden="true" tabindex="-1"></a><span class="vs">              &lt;span class="fact-value"&gt;</span><span class="sc">${</span>question<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="at">capital</span><span class="sc">}</span><span class="vs">&lt;/span&gt;</span></span>
+<span id="cb1-660"><a href="#cb1-660" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/li&gt;</span></span>
+<span id="cb1-661"><a href="#cb1-661" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;li class="fact-item"&gt;</span></span>
+<span id="cb1-662"><a href="#cb1-662" aria-hidden="true" tabindex="-1"></a><span class="vs">              &lt;span class="fact-label"&gt;💰 Currency&lt;/span&gt;</span></span>
+<span id="cb1-663"><a href="#cb1-663" aria-hidden="true" tabindex="-1"></a><span class="vs">              &lt;span class="fact-value"&gt;</span><span class="sc">${</span>question<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="at">currency</span><span class="sc">}</span><span class="vs">&lt;/span&gt;</span></span>
+<span id="cb1-664"><a href="#cb1-664" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/li&gt;</span></span>
+<span id="cb1-665"><a href="#cb1-665" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;li class="fact-item"&gt;</span></span>
+<span id="cb1-666"><a href="#cb1-666" aria-hidden="true" tabindex="-1"></a><span class="vs">              &lt;span class="fact-label"&gt;👥 Population&lt;/span&gt;</span></span>
+<span id="cb1-667"><a href="#cb1-667" aria-hidden="true" tabindex="-1"></a><span class="vs">              &lt;span class="fact-value"&gt;</span><span class="sc">${</span>question<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="at">population</span><span class="sc">}</span><span class="vs">&lt;/span&gt;</span></span>
+<span id="cb1-668"><a href="#cb1-668" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/li&gt;</span></span>
+<span id="cb1-669"><a href="#cb1-669" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;li class="fact-item" style="grid-column: 1 / -1;"&gt;</span></span>
+<span id="cb1-670"><a href="#cb1-670" aria-hidden="true" tabindex="-1"></a><span class="vs">              &lt;span class="fact-label"&gt;🐾 National Animal&lt;/span&gt;</span></span>
+<span id="cb1-671"><a href="#cb1-671" aria-hidden="true" tabindex="-1"></a><span class="vs">              &lt;span class="fact-value"&gt;</span><span class="sc">${</span>question<span class="op">.</span><span class="at">target</span><span class="op">.</span><span class="at">animal</span><span class="sc">}</span><span class="vs">&lt;/span&gt;</span></span>
+<span id="cb1-672"><a href="#cb1-672" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/li&gt;</span></span>
+<span id="cb1-673"><a href="#cb1-673" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;/ul&gt;</span></span>
+<span id="cb1-674"><a href="#cb1-674" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
+<span id="cb1-675"><a href="#cb1-675" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-676"><a href="#cb1-676" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;button id="next-trigger" class="next-btn"&gt;Next Question ➔&lt;/button&gt;</span></span>
+<span id="cb1-677"><a href="#cb1-677" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;/div&gt;</span></span>
+<span id="cb1-678"><a href="#cb1-678" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-679"><a href="#cb1-679" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="side-pillar"&gt;</span></span>
+<span id="cb1-680"><a href="#cb1-680" aria-hidden="true" tabindex="-1"></a><span class="vs">        </span><span class="sc">${</span>right_flags<span class="op">.</span><span class="fu">map</span>(f <span class="kw">=&gt;</span> <span class="fu">html</span><span class="vs">`&lt;img src="flags/</span><span class="sc">${</span>f<span class="sc">}</span><span class="vs">" alt=""&gt;`</span>)<span class="sc">}</span></span>
+<span id="cb1-681"><a href="#cb1-681" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;/div&gt;</span></span>
+<span id="cb1-682"><a href="#cb1-682" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;</span></span>
+<span id="cb1-683"><a href="#cb1-683" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-684"><a href="#cb1-684" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;!-- Bottom Decorative Banner --&gt;</span></span>
+<span id="cb1-685"><a href="#cb1-685" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div class="bunting-trim"&gt;&lt;/div&gt;</span></span>
+<span id="cb1-686"><a href="#cb1-686" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div class="edge-ribbon bottom"&gt;</span></span>
+<span id="cb1-687"><a href="#cb1-687" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="flag-strip-row"&gt;</span></span>
+<span id="cb1-688"><a href="#cb1-688" aria-hidden="true" tabindex="-1"></a><span class="vs">        </span><span class="sc">${</span>bottom_flags<span class="op">.</span><span class="fu">map</span>(f <span class="kw">=&gt;</span> <span class="fu">html</span><span class="vs">`&lt;img src="flags/</span><span class="sc">${</span>f<span class="sc">}</span><span class="vs">" alt=""&gt;`</span>)<span class="sc">}</span></span>
+<span id="cb1-689"><a href="#cb1-689" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;/div&gt;</span></span>
+<span id="cb1-690"><a href="#cb1-690" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;</span></span>
+<span id="cb1-691"><a href="#cb1-691" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/div&gt;`</span><span class="op">;</span></span>
+<span id="cb1-692"><a href="#cb1-692" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-693"><a href="#cb1-693" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> grid <span class="op">=</span> page<span class="op">.</span><span class="fu">querySelector</span>(<span class="st">"#grid"</span>)<span class="op">;</span></span>
+<span id="cb1-694"><a href="#cb1-694" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> feedback <span class="op">=</span> page<span class="op">.</span><span class="fu">querySelector</span>(<span class="st">"#feedback"</span>)<span class="op">;</span></span>
+<span id="cb1-695"><a href="#cb1-695" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> factBox <span class="op">=</span> page<span class="op">.</span><span class="fu">querySelector</span>(<span class="st">"#fact-box"</span>)<span class="op">;</span></span>
+<span id="cb1-696"><a href="#cb1-696" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> nextTrigger <span class="op">=</span> page<span class="op">.</span><span class="fu">querySelector</span>(<span class="st">"#next-trigger"</span>)<span class="op">;</span></span>
+<span id="cb1-697"><a href="#cb1-697" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-698"><a href="#cb1-698" aria-hidden="true" tabindex="-1"></a>  question<span class="op">.</span><span class="at">options</span><span class="op">.</span><span class="fu">forEach</span>((opt) <span class="kw">=&gt;</span> {</span>
+<span id="cb1-699"><a href="#cb1-699" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> card <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;button class="flag-option"&gt;</span></span>
+<span id="cb1-700"><a href="#cb1-700" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;img src="flags/</span><span class="sc">${</span>opt<span class="op">.</span><span class="at">file</span><span class="sc">}</span><span class="vs">" alt="Flag option"&gt;</span></span>
+<span id="cb1-701"><a href="#cb1-701" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/button&gt;`</span><span class="op">;</span></span>
+<span id="cb1-702"><a href="#cb1-702" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-703"><a href="#cb1-703" aria-hidden="true" tabindex="-1"></a>    card<span class="op">.</span><span class="at">onclick</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb1-704"><a href="#cb1-704" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (opt<span class="op">.</span><span class="at">correct</span>) {</span>
+<span id="cb1-705"><a href="#cb1-705" aria-hidden="true" tabindex="-1"></a>        card<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">borderColor</span> <span class="op">=</span> <span class="st">"#22c55e"</span><span class="op">;</span></span>
+<span id="cb1-706"><a href="#cb1-706" aria-hidden="true" tabindex="-1"></a>        card<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">background</span> <span class="op">=</span> <span class="st">"rgba(22, 163, 74, 0.25)"</span><span class="op">;</span></span>
+<span id="cb1-707"><a href="#cb1-707" aria-hidden="true" tabindex="-1"></a>        feedback<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">color</span> <span class="op">=</span> <span class="st">"#4ade80"</span><span class="op">;</span></span>
+<span id="cb1-708"><a href="#cb1-708" aria-hidden="true" tabindex="-1"></a>        feedback<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">borderColor</span> <span class="op">=</span> <span class="st">"#22c55e"</span><span class="op">;</span></span>
+<span id="cb1-709"><a href="#cb1-709" aria-hidden="true" tabindex="-1"></a>        feedback<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="vs">`✅ Correct! Here are some quick facts about </span><span class="sc">${</span>opt<span class="op">.</span><span class="at">name</span><span class="sc">}</span><span class="vs">:`</span><span class="op">;</span></span>
+<span id="cb1-710"><a href="#cb1-710" aria-hidden="true" tabindex="-1"></a>        factBox<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">display</span> <span class="op">=</span> <span class="st">"block"</span><span class="op">;</span></span>
+<span id="cb1-711"><a href="#cb1-711" aria-hidden="true" tabindex="-1"></a>      } <span class="cf">else</span> {</span>
+<span id="cb1-712"><a href="#cb1-712" aria-hidden="true" tabindex="-1"></a>        card<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">borderColor</span> <span class="op">=</span> <span class="st">"#ef4444"</span><span class="op">;</span></span>
+<span id="cb1-713"><a href="#cb1-713" aria-hidden="true" tabindex="-1"></a>        card<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">background</span> <span class="op">=</span> <span class="st">"rgba(220, 38, 38, 0.25)"</span><span class="op">;</span></span>
+<span id="cb1-714"><a href="#cb1-714" aria-hidden="true" tabindex="-1"></a>        feedback<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">color</span> <span class="op">=</span> <span class="st">"#f87171"</span><span class="op">;</span></span>
+<span id="cb1-715"><a href="#cb1-715" aria-hidden="true" tabindex="-1"></a>        feedback<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">borderColor</span> <span class="op">=</span> <span class="st">"#ef4444"</span><span class="op">;</span></span>
+<span id="cb1-716"><a href="#cb1-716" aria-hidden="true" tabindex="-1"></a>        feedback<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="vs">`❌ Wrong! That is the flag of </span><span class="sc">${</span>opt<span class="op">.</span><span class="at">name</span><span class="sc">}</span><span class="vs">. Try another flag!`</span><span class="op">;</span></span>
+<span id="cb1-717"><a href="#cb1-717" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb1-718"><a href="#cb1-718" aria-hidden="true" tabindex="-1"></a>    }<span class="op">;</span></span>
+<span id="cb1-719"><a href="#cb1-719" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-720"><a href="#cb1-720" aria-hidden="true" tabindex="-1"></a>    grid<span class="op">.</span><span class="fu">appendChild</span>(card)<span class="op">;</span></span>
+<span id="cb1-721"><a href="#cb1-721" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb1-722"><a href="#cb1-722" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-723"><a href="#cb1-723" aria-hidden="true" tabindex="-1"></a>  nextTrigger<span class="op">.</span><span class="at">onclick</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb1-724"><a href="#cb1-724" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> btn <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">querySelector</span>(<span class="st">".ojs-hidden-btn button"</span>)<span class="op">;</span></span>
+<span id="cb1-725"><a href="#cb1-725" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (btn) btn<span class="op">.</span><span class="fu">click</span>()<span class="op">;</span></span>
+<span id="cb1-726"><a href="#cb1-726" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb1-727"><a href="#cb1-727" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-728"><a href="#cb1-728" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> page<span class="op">;</span></span>
+<span id="cb1-729"><a href="#cb1-729" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-6" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-7" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-8" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImNvdW50cmllcyA9IHRyYW5zcG9zZShmbGFnX2RhdGEpXG5cbi8vIEhpZGRlbiByZWFjdGl2ZSBjb3VudGVyIGZvciBkcmF3aW5nIGEgbmV3IHF1ZXN0aW9uXG52aWV3b2YgbmV4dF9idG4gPSB7XG4gIGNvbnN0IGZvcm0gPSBJbnB1dHMuYnV0dG9uKFwiTmV4dCBRdWVzdGlvblwiLCB7IHZhbHVlOiAwIH0pO1xuICBmb3JtLmNsYXNzTGlzdC5hZGQoXCJvanMtaGlkZGVuLWJ0blwiKTtcbiAgcmV0dXJuIGZvcm07XG59XG5cbi8vIENob29zZSBhIHJhbmRvbSBjb3VudHJ5IGVhY2ggdGltZSB0aGUgcGFnZSBsb2FkcyBvciBcIk5leHQgUXVlc3Rpb25cIiBpcyBjbGlja2VkXG5xdWVzdGlvbiA9IHtcbiAgbmV4dF9idG47XG4gIGNvbnN0IGlkeCA9IE1hdGguZmxvb3IoTWF0aC5yYW5kb20oKSAqIGNvdW50cmllcy5sZW5ndGgpO1xuICBjb25zdCB0YXJnZXQgPSBjb3VudHJpZXNbaWR4XTtcbiAgXG4gIGNvbnN0IG9wdGlvbnMgPSBbXG4gICAgeyBmaWxlOiB0YXJnZXQuZmlsZSwgbmFtZTogdGFyZ2V0Lm5hbWUsIGNvcnJlY3Q6IHRydWUgfSxcbiAgICB7IGZpbGU6IHRhcmdldC5zaW1pbGFyWzBdLCBuYW1lOiB0YXJnZXQuc2ltaWxhcl9uYW1lc1swXSwgY29ycmVjdDogZmFsc2UgfSxcbiAgICB7IGZpbGU6IHRhcmdldC5zaW1pbGFyWzFdLCBuYW1lOiB0YXJnZXQuc2ltaWxhcl9uYW1lc1sxXSwgY29ycmVjdDogZmFsc2UgfSxcbiAgICB7IGZpbGU6IHRhcmdldC5zaW1pbGFyWzJdLCBuYW1lOiB0YXJnZXQuc2ltaWxhcl9uYW1lc1syXSwgY29ycmVjdDogZmFsc2UgfVxuICBdO1xuICBcbiAgLy8gU2h1ZmZsZSB0aGUgNCBmbGFnIG9wdGlvbnNcbiAgZm9yIChsZXQgaSA9IG9wdGlvbnMubGVuZ3RoIC0gMTsgaSA+IDA7IGktLSkge1xuICAgIGNvbnN0IGogPSBNYXRoLmZsb29yKE1hdGgucmFuZG9tKCkgKiAoaSArIDEpKTtcbiAgICBbb3B0aW9uc1tpXSwgb3B0aW9uc1tqXV0gPSBbb3B0aW9uc1tqXSwgb3B0aW9uc1tpXV07XG4gIH1cbiAgXG4gIHJldHVybiB7IHRhcmdldCwgb3B0aW9ucyB9O1xufVxuXG4vLyBEZWNvcmF0aXZlIGZsYWcgbGlzdHMgZm9yIHRvcCwgYm90dG9tLCBsZWZ0LCBhbmQgcmlnaHQgYm9yZGVyc1xudG9wX2ZsYWdzID0gW1widXMucG5nXCIsIFwiZ2IucG5nXCIsIFwiZnIucG5nXCIsIFwiZGUucG5nXCIsIFwianAucG5nXCIsIFwiYnIucG5nXCIsIFwiY2EucG5nXCIsIFwiYXUucG5nXCIsIFwiaW4ucG5nXCIsIFwiaXQucG5nXCIsIFwiZXMucG5nXCIsIFwibXgucG5nXCIsIFwia3IucG5nXCIsIFwiemEucG5nXCIsIFwic2UucG5nXCIsIFwibm8ucG5nXCIsIFwiY2gucG5nXCIsIFwiYXIucG5nXCIsIFwibmwucG5nXCIsIFwiZ3IucG5nXCJdXG5ib3R0b21fZmxhZ3MgPSBbXCJOWi5wbmdcIiwgXCJpZS5wbmdcIiwgXCJwdC5wbmdcIiwgXCJiZS5wbmdcIiwgXCJhdC5wbmdcIiwgXCJkay5wbmdcIiwgXCJmaS5wbmdcIiwgXCJwbC5wbmdcIiwgXCJjei5wbmdcIiwgXCJodS5wbmdcIiwgXCJ0ci5wbmdcIiwgXCJlZy5wbmdcIiwgXCJrZS5wbmdcIiwgXCJuZy5wbmdcIiwgXCJ0aC5wbmdcIiwgXCJ2bi5wbmdcIiwgXCJwaC5wbmdcIiwgXCJteS5wbmdcIiwgXCJzZy5wbmdcIiwgXCJjbC5wbmdcIl0ubWFwKGYgPT4gZi50b0xvd2VyQ2FzZSgpKVxubGVmdF9mbGFncyA9IFtcImN1LnBuZ1wiLCBcIkpNLnBuZ1wiLCBcInBhLnBuZ1wiLCBcImNvLnBuZ1wiLCBcInBlLnBuZ1wiLCBcInV5LnBuZ1wiLCBcImlzLnBuZ1wiLCBcInVhLnBuZ1wiXS5tYXAoZiA9PiBmLnRvTG93ZXJDYXNlKCkpXG5yaWdodF9mbGFncyA9IFtcImhyLnBuZ1wiLCBcInJvLnBuZ1wiLCBcImJnLnBuZ1wiLCBcInJzLnBuZ1wiLCBcIm1hLnBuZ1wiLCBcImdoLnBuZ1wiLCBcImlkLnBuZ1wiLCBcIm5wLnBuZ1wiXVxuXG4vLyBGdWxsIFBhZ2UgRGVjb3JhdGVkIEdhbWUgTGF5b3V0XG57XG4gIGNvbnN0IHBhZ2UgPSBodG1sYDxkaXY+XG4gICAgPCEtLSBUb3AgRGVjb3JhdGl2ZSBCYW5uZXIgLS0+XG4gICAgPGRpdiBjbGFzcz1cImVkZ2UtcmliYm9uIHRvcFwiPlxuICAgICAgPGRpdiBjbGFzcz1cImZsYWctc3RyaXAtcm93XCI+XG4gICAgICAgICR7dG9wX2ZsYWdzLm1hcChmID0+IGh0bWxgPGltZyBzcmM9XCJmbGFncy8ke2Z9XCIgYWx0PVwiXCI+YCl9XG4gICAgICA8L2Rpdj5cbiAgICA8L2Rpdj5cbiAgICA8ZGl2IGNsYXNzPVwiYnVudGluZy10cmltXCI+PC9kaXY+XG5cbiAgICA8IS0tIE1pZGRsZSBBcmVuYTogTGVmdCBQaWxsYXIgKyBHYW1lIENhcmQgKyBSaWdodCBQaWxsYXIgLS0+XG4gICAgPGRpdiBjbGFzcz1cImFyZW5hLXdyYXBwZXJcIj5cbiAgICAgIDxkaXYgY2xhc3M9XCJzaWRlLXBpbGxhclwiPlxuICAgICAgICAke2xlZnRfZmxhZ3MubWFwKGYgPT4gaHRtbGA8aW1nIHNyYz1cImZsYWdzLyR7Zn1cIiBhbHQ9XCJcIj5gKX1cbiAgICAgIDwvZGl2PlxuXG4gICAgICA8ZGl2IGNsYXNzPVwiZ2FtZS1jYXJkXCI+XG4gICAgICAgIDxkaXYgY2xhc3M9XCJiYWRnZS1oZWFkZXJcIj7wn4yNIFZleGlsbG9sb2d5IExvb2thbGlrZSBRdWl6PC9kaXY+XG4gICAgICAgIDxoMSBjbGFzcz1cInF1ZXN0aW9uLXRpdGxlXCI+XG4gICAgICAgICAgV2hpY2ggZmxhZyBiZWxvbmdzIHRvIDxzcGFuIGNsYXNzPVwiY291bnRyeS1oaWdobGlnaHRcIj4ke3F1ZXN0aW9uLnRhcmdldC5uYW1lfTwvc3Bhbj4/XG4gICAgICAgIDwvaDE+XG4gICAgICAgIDxwIHN0eWxlPVwiY29sb3I6ICM5NGEzYjg7IG1hcmdpbjogMDtcIj5cbiAgICAgICAgICBUaGVzZSA0IGZsYWdzIHNoYXJlIHNpbWlsYXIgY29sb3JzIGFuZCBsYXlvdXRz4oCUY2xpY2sgdGhlIHJpZ2h0IG9uZSFcbiAgICAgICAgPC9wPlxuXG4gICAgICAgIDxkaXYgaWQ9XCJncmlkXCIgY2xhc3M9XCJmbGFnLWdyaWRcIj48L2Rpdj5cblxuICAgICAgICA8ZGl2IGlkPVwiZmVlZGJhY2tcIiBjbGFzcz1cImZlZWRiYWNrLWJhclwiIHN0eWxlPVwiY29sb3I6ICNjYmQ1ZTE7XCI+XG4gICAgICAgICAg8J+RhiBTZWxlY3Qgb25lIG9mIHRoZSBmb3VyIGZsYWdzIGFib3ZlIHRvIHRlc3QgeW91ciBleWUhXG4gICAgICAgIDwvZGl2PlxuXG4gICAgICAgIDxkaXYgaWQ9XCJmYWN0LWJveFwiIGNsYXNzPVwiZmFjdC1jYXJkXCI+XG4gICAgICAgICAgPGRpdiBjbGFzcz1cImZhY3QtY2FyZC1oZWFkZXJcIj5cbiAgICAgICAgICAgIDxpbWcgc3JjPVwiZmxhZ3MvJHtxdWVzdGlvbi50YXJnZXQuZmlsZX1cIiBhbHQ9XCIke3F1ZXN0aW9uLnRhcmdldC5uYW1lfSBmbGFnXCI+XG4gICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICA8ZGl2IHN0eWxlPVwiY29sb3I6ICM0YWRlODA7IGZvbnQtc2l6ZTogMC44cmVtOyBmb250LXdlaWdodDogODAwOyB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlOyBsZXR0ZXItc3BhY2luZzogMS41cHg7XCI+Q291bnRyeSBGYWN0IEZpbGU8L2Rpdj5cbiAgICAgICAgICAgICAgPGRpdiBzdHlsZT1cImZvbnQtc2l6ZTogMS40cmVtOyBmb250LXdlaWdodDogODAwOyBjb2xvcjogI2Y4ZmFmYztcIj4ke3F1ZXN0aW9uLnRhcmdldC5uYW1lfTwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPHVsIGNsYXNzPVwiZmFjdC1saXN0XCI+XG4gICAgICAgICAgICA8bGkgY2xhc3M9XCJmYWN0LWl0ZW1cIj5cbiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9XCJmYWN0LWxhYmVsXCI+8J+Ps++4jyBDb3VudHJ5IE5hbWU8L3NwYW4+XG4gICAgICAgICAgICAgIDxzcGFuIGNsYXNzPVwiZmFjdC12YWx1ZVwiPiR7cXVlc3Rpb24udGFyZ2V0Lm5hbWV9PC9zcGFuPlxuICAgICAgICAgICAgPC9saT5cbiAgICAgICAgICAgIDxsaSBjbGFzcz1cImZhY3QtaXRlbVwiPlxuICAgICAgICAgICAgICA8c3BhbiBjbGFzcz1cImZhY3QtbGFiZWxcIj7wn4+b77iPIENhcGl0YWw8L3NwYW4+XG4gICAgICAgICAgICAgIDxzcGFuIGNsYXNzPVwiZmFjdC12YWx1ZVwiPiR7cXVlc3Rpb24udGFyZ2V0LmNhcGl0YWx9PC9zcGFuPlxuICAgICAgICAgICAgPC9saT5cbiAgICAgICAgICAgIDxsaSBjbGFzcz1cImZhY3QtaXRlbVwiPlxuICAgICAgICAgICAgICA8c3BhbiBjbGFzcz1cImZhY3QtbGFiZWxcIj7wn5KwIEN1cnJlbmN5PC9zcGFuPlxuICAgICAgICAgICAgICA8c3BhbiBjbGFzcz1cImZhY3QtdmFsdWVcIj4ke3F1ZXN0aW9uLnRhcmdldC5jdXJyZW5jeX08L3NwYW4+XG4gICAgICAgICAgICA8L2xpPlxuICAgICAgICAgICAgPGxpIGNsYXNzPVwiZmFjdC1pdGVtXCI+XG4gICAgICAgICAgICAgIDxzcGFuIGNsYXNzPVwiZmFjdC1sYWJlbFwiPvCfkaUgUG9wdWxhdGlvbjwvc3Bhbj5cbiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9XCJmYWN0LXZhbHVlXCI+JHtxdWVzdGlvbi50YXJnZXQucG9wdWxhdGlvbn08L3NwYW4+XG4gICAgICAgICAgICA8L2xpPlxuICAgICAgICAgICAgPGxpIGNsYXNzPVwiZmFjdC1pdGVtXCIgc3R5bGU9XCJncmlkLWNvbHVtbjogMSAvIC0xO1wiPlxuICAgICAgICAgICAgICA8c3BhbiBjbGFzcz1cImZhY3QtbGFiZWxcIj7wn5C+IE5hdGlvbmFsIEFuaW1hbDwvc3Bhbj5cbiAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9XCJmYWN0LXZhbHVlXCI+JHtxdWVzdGlvbi50YXJnZXQuYW5pbWFsfTwvc3Bhbj5cbiAgICAgICAgICAgIDwvbGk+XG4gICAgICAgICAgPC91bD5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPGJ1dHRvbiBpZD1cIm5leHQtdHJpZ2dlclwiIGNsYXNzPVwibmV4dC1idG5cIj5OZXh0IFF1ZXN0aW9uIOKelDwvYnV0dG9uPlxuICAgICAgPC9kaXY+XG5cbiAgICAgIDxkaXYgY2xhc3M9XCJzaWRlLXBpbGxhclwiPlxuICAgICAgICAke3JpZ2h0X2ZsYWdzLm1hcChmID0+IGh0bWxgPGltZyBzcmM9XCJmbGFncy8ke2Z9XCIgYWx0PVwiXCI+YCl9XG4gICAgICA8L2Rpdj5cbiAgICA8L2Rpdj5cblxuICAgIDwhLS0gQm90dG9tIERlY29yYXRpdmUgQmFubmVyIC0tPlxuICAgIDxkaXYgY2xhc3M9XCJidW50aW5nLXRyaW1cIj48L2Rpdj5cbiAgICA8ZGl2IGNsYXNzPVwiZWRnZS1yaWJib24gYm90dG9tXCI+XG4gICAgICA8ZGl2IGNsYXNzPVwiZmxhZy1zdHJpcC1yb3dcIj5cbiAgICAgICAgJHtib3R0b21fZmxhZ3MubWFwKGYgPT4gaHRtbGA8aW1nIHNyYz1cImZsYWdzLyR7Zn1cIiBhbHQ9XCJcIj5gKX1cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICA8L2Rpdj5gO1xuXG4gIGNvbnN0IGdyaWQgPSBwYWdlLnF1ZXJ5U2VsZWN0b3IoXCIjZ3JpZFwiKTtcbiAgY29uc3QgZmVlZGJhY2sgPSBwYWdlLnF1ZXJ5U2VsZWN0b3IoXCIjZmVlZGJhY2tcIik7XG4gIGNvbnN0IGZhY3RCb3ggPSBwYWdlLnF1ZXJ5U2VsZWN0b3IoXCIjZmFjdC1ib3hcIik7XG4gIGNvbnN0IG5leHRUcmlnZ2VyID0gcGFnZS5xdWVyeVNlbGVjdG9yKFwiI25leHQtdHJpZ2dlclwiKTtcblxuICBxdWVzdGlvbi5vcHRpb25zLmZvckVhY2goKG9wdCkgPT4ge1xuICAgIGNvbnN0IGNhcmQgPSBodG1sYDxidXR0b24gY2xhc3M9XCJmbGFnLW9wdGlvblwiPlxuICAgICAgPGltZyBzcmM9XCJmbGFncy8ke29wdC5maWxlfVwiIGFsdD1cIkZsYWcgb3B0aW9uXCI+XG4gICAgPC9idXR0b24+YDtcblxuICAgIGNhcmQub25jbGljayA9ICgpID0+IHtcbiAgICAgIGlmIChvcHQuY29ycmVjdCkge1xuICAgICAgICBjYXJkLnN0eWxlLmJvcmRlckNvbG9yID0gXCIjMjJjNTVlXCI7XG4gICAgICAgIGNhcmQuc3R5bGUuYmFja2dyb3VuZCA9IFwicmdiYSgyMiwgMTYzLCA3NCwgMC4yNSlcIjtcbiAgICAgICAgZmVlZGJhY2suc3R5bGUuY29sb3IgPSBcIiM0YWRlODBcIjtcbiAgICAgICAgZmVlZGJhY2suc3R5bGUuYm9yZGVyQ29sb3IgPSBcIiMyMmM1NWVcIjtcbiAgICAgICAgZmVlZGJhY2sudGV4dENvbnRlbnQgPSBg4pyFIENvcnJlY3QhIEhlcmUgYXJlIHNvbWUgcXVpY2sgZmFjdHMgYWJvdXQgJHtvcHQubmFtZX06YDtcbiAgICAgICAgZmFjdEJveC5zdHlsZS5kaXNwbGF5ID0gXCJibG9ja1wiO1xuICAgICAgfSBlbHNlIHtcbiAgICAgICAgY2FyZC5zdHlsZS5ib3JkZXJDb2xvciA9IFwiI2VmNDQ0NFwiO1xuICAgICAgICBjYXJkLnN0eWxlLmJhY2tncm91bmQgPSBcInJnYmEoMjIwLCAzOCwgMzgsIDAuMjUpXCI7XG4gICAgICAgIGZlZWRiYWNrLnN0eWxlLmNvbG9yID0gXCIjZjg3MTcxXCI7XG4gICAgICAgIGZlZWRiYWNrLnN0eWxlLmJvcmRlckNvbG9yID0gXCIjZWY0NDQ0XCI7XG4gICAgICAgIGZlZWRiYWNrLnRleHRDb250ZW50ID0gYOKdjCBXcm9uZyEgVGhhdCBpcyB0aGUgZmxhZyBvZiAke29wdC5uYW1lfS4gVHJ5IGFub3RoZXIgZmxhZyFgO1xuICAgICAgfVxuICAgIH07XG5cbiAgICBncmlkLmFwcGVuZENoaWxkKGNhcmQpO1xuICB9KTtcblxuICBuZXh0VHJpZ2dlci5vbmNsaWNrID0gKCkgPT4ge1xuICAgIGNvbnN0IGJ0biA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIub2pzLWhpZGRlbi1idG4gYnV0dG9uXCIpO1xuICAgIGlmIChidG4pIGJ0bi5jbGljaygpO1xuICB9O1xuXG4gIHJldHVybiBwYWdlO1xufVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCduZXh0X2J0bicpIn1dfQ==
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../..";
+window._ojs.paths.runtimeToRoot = "../../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>
